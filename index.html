@@ -53,6 +53,13 @@
   <p>I lead pricing strategy and commercial analytics for a global engineering business, and I build the tools underneath it. It is engineered-to-order: BOMs created daily, varying metallurgy, custom sizing, no two orders identical. I have worked the other end of it too, high volume and standard parts, a portfolio of well over a million lines.</p>
   <p>Most pricing problems are not technology problems. They are governance, discipline and adoption problems; the technology just makes the fix scalable. The work below is what that looks like in practice. Every number states its basis, and where something cannot be claimed, it is not claimed.</p>
 
+  <h2>How I work</h2>
+  <p><strong>Numbers carry their basis.</strong> A figure that cannot say where it came from does not go on the page. Where attribution is uncertain, the uncertainty is stated before anyone asks.</p>
+  <p><strong>Tools check themselves before you have to.</strong> The gross-to-net bridge derives its own residual and reports it as its error rate, rather than absorbing it into a bar marked "other". The input cost tracker reproduces the published ONS headline from raw index levels before it asks you to trust anything else it says.</p>
+  <p><strong>Stale data is a silent failure, so make it loud.</strong> Building the tracker, I found the ONS serves a frozen 2025 edition of the same series at a slightly different path: HTTP 200, plausible numbers, no warning of any kind. Every pipeline I ship prints the age of its data, because an endpoint that keeps answering with old numbers is worse than one that fails. The full write-up is in the tracker's README.</p>
+  <p><strong>Validation is out of sample, or it is not validation.</strong> Walk-forward backtesting, never in-sample fit. I published my energy model's forecast errors and corrected for the measured bias, rather than refitting until it looked right.</p>
+  <p><strong>Definitions before dashboards.</strong> Most analytics failures are definition failures. What a customer is, what a product is, which date counts: agreed and written down before anything gets built, because a better dashboard renders three incompatible numbers more confidently.</p>
+
   <h2>Track record</h2>
 
   <h3>Manual pricing, from over 80% to under a quarter</h3>
