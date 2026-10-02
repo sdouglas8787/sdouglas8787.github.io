@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stuart Douglas - Pricing &amp; Commercial Analytics</title>
+<meta name="description" content="Pricing strategy, revenue growth management and commercial analytics. Fifteen years across engineered-to-order and high-volume businesses, and the tools built underneath.">
+<style>
+  :root{
+    --bg:#fcfbf9; --ink:#1c2430; --muted:#5b6673; --line:#e4e0d8;
+    --accent:#2a6f6a; --card:#ffffff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14181d; --ink:#e8e6e1; --muted:#9aa4af; --line:#2a313a;
+           --accent:#6fb5af; --card:#1b2129; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  main{max-width:46rem;margin:0 auto;padding:3.5rem 1.25rem 4rem;}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  h1{font-size:2rem;margin:0 0 .25rem;letter-spacing:-.02em}
+  .tagline{font-size:1.15rem;color:var(--muted);margin:0 0 1rem}
+  .links{margin:0 0 2.5rem;font-size:.95rem}
+  .links a{margin-right:1.1rem}
+  h2{font-size:1.05rem;text-transform:uppercase;letter-spacing:.08em;
+     color:var(--muted);margin:2.8rem 0 1rem;border-bottom:1px solid var(--line);
+     padding-bottom:.4rem;font-weight:600}
+  h3{font-size:1.05rem;margin:1.6rem 0 .4rem}
+  p{margin:.65rem 0}
+  .proj{padding:1rem 1.1rem;border:1px solid var(--line);border-radius:8px;
+        background:var(--card);margin:0 0 .8rem}
+  .proj h3{margin:0 0 .3rem;font-size:1rem}
+  .proj p{margin:0;font-size:.95rem;color:var(--muted)}
+  .note{font-size:.9rem;color:var(--muted)}
+  footer{max-width:46rem;margin:0 auto;padding:0 1.25rem 3rem;
+         font-size:.85rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Stuart Douglas</h1>
+  <p class="tagline">Pricing strategy, revenue growth management and commercial analytics. I build the tools underneath.</p>
+  <p class="links">
+    <a href="https://github.com/sdouglas8787">GitHub</a>
+    <a href="https://www.linkedin.com/in/stuartdouglas87/">LinkedIn</a>
+    <a href="https://medium.com/@stuartdouglas79">Medium</a>
+    <a href="mailto:stuartdouglas79@gmail.com">Email</a>
+  </p>
+
+  <h2>About</h2>
+  <p>I lead pricing strategy and commercial analytics for a global engineering business, and I build the tools underneath it. It is engineered-to-order: BOMs created daily, varying metallurgy, custom sizing, no two orders identical. I have worked the other end of it too, high volume and standard parts, a portfolio of well over a million lines.</p>
+  <p>Most pricing problems are not technology problems. They are governance, discipline and adoption problems; the technology just makes the fix scalable. The work below is what that looks like in practice. Every number states its basis, and where something cannot be claimed, it is not claimed.</p>
+
+  <h2>Track record</h2>
+
+  <h3>Manual pricing, from over 80% to under a quarter</h3>
+  <p>I ran a programme in a large industrial business where most orders were priced by hand. Manual pricing fell from over 80% to under a quarter, and the share of products with no list price at all fell by more than half. The margin also improved over the same period, but several other things moved at once, so I would not claim the margin as a pricing result. The transferable part is the governance, not the number: a discount corridor nobody can quietly step outside, an audit with teeth, and a measure of whether the price you agreed is the price you got.</p>
+
+  <h3>Price realisation as the global measure</h3>
+  <p>Most pricing functions can tell you the price they agreed. Far fewer can tell you the price they actually achieved, because the two live in different systems and the gap belongs to nobody. I introduced price realisation as a global measure in a large industrial business. The interesting part was not the analysis, it was that it turned an opinion into a number people could argue about. A price increase that was agreed but never implemented is not a price increase, and until you measure that, nobody has to admit it.</p>
+
+  <h3>An analytics platform where none existed</h3>
+  <p>I built a pricing analytics platform in a large manufacturing business where none existed. Millions of transactions across two ERP systems, consolidated into curated datasets and pushed out through self-service reporting. The part that took longest was not the pipeline. It was getting agreement on what a customer was, what a product was, and which date counted. Most analytics failures I have seen are definition failures, not modelling failures, and this was no exception.</p>
+
+  <h3>Country pricing factors that passed audit</h3>
+  <p>A pricing model nobody can explain is a compliance risk, not just an analytical one. I inherited a set of country price multipliers that had not been touched in over a decade and had no documented derivation. I rebuilt them from public World Bank indicators - GDP at purchasing power parity, the Logistics Performance Index, tariff rates - as a transparent weighted model with guardrails you can see and change. It passed internal audit. The value was not a better number. It was that the new number could be explained, challenged and adjusted by someone who was not me.</p>
+
+  <h3>Budgets within five percent, without buying the outcome</h3>
+  <p>I built a cost-index-led budgeting methodology for a parts portfolio of well over a million lines. Revenue and profit came in within five percent of budget, and we did not use extra promotional activity to get there - which matters, because hitting a number by discounting into it is not accuracy, it is purchasing the outcome. The part I am most pleased with is that other markets adopted it. A method that only works when its author runs it is not a method, it is a habit.</p>
+
+  <h2>Projects</h2>
+  <p class="note">Small, documented, reproducible tools that solve a specific commercial problem end to end. All public.</p>
+
+  <div class="proj"><h3><a href="https://github.com/sdouglas8787/input_cost_tracker">input_cost_tracker</a></h3>
+  <p>UK input costs and pass-through from ONS producer price data. Prints a rule-generated reading of the month, validates itself against the published bulletin, and states which claims the data will and will not support. Standard library Python, no API key.</p></div>
+
+  <div class="proj"><h3><a href="https://github.com/sdouglas8787/g2n_waterfall">g2n_waterfall</a></h3>
+  <p>Gross-to-net and PVM bridges. Trade terms, conditional versus unconditional spend, attainment, year-on-year price growth. Built so it cannot quietly stop adding up, and so anything it cannot explain gets shown rather than buried.</p></div>
+
+  <div class="proj"><h3><a href="https://github.com/sdouglas8787/home_energy_tariff_tracker">home_energy_tariff_tracker</a></h3>
+  <p>Forecasting engine for household energy costs. Walk-forward backtesting, bias correction, Monte Carlo tariff comparison and weather normalisation.</p></div>
+
+  <div class="proj"><h3><a href="https://github.com/sdouglas8787/weather_dashboard">weather_dashboard</a></h3>
+  <p>End-to-end pipeline: API ingestion, automated processing and Power BI reporting.</p></div>
+
+  <h2>Writing</h2>
+  <p><a href="https://medium.com/@stuartdouglas79/i-nearly-made-a-421-mistake-on-my-energy-tariff-so-i-built-my-own-forecasting-engine-0203a8a535e6?source=friends_link&amp;sk=7e9fadddd3d08a86adf1583a9868db44">I nearly made a £421 mistake on my energy tariff. So I built my own forecasting engine.</a><br>
+  <span class="note">Every comparison site got it wrong because none of them knew how I actually use energy. Walk-forward validation, bias correction and Monte Carlo simulation, applied to a gas bill.</span></p>
+
+  <h2>Now</h2>
+  <p>Working through a structured causal inference curriculum: Brady Neal's course alongside the academic literature, then Bayesian methods. Self taught by building; currently adding the theory underneath.</p>
+</main>
+<footer>Plain HTML. No tracking, no cookies, no scripts.</footer>
+</body>
+</html>
